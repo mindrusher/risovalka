@@ -1,0 +1,64 @@
+body {
+  background-image: url("draw.png"); }
+
+#canv {
+  position: absolute;
+  width: 800px;
+  height: 500px;
+  background: white;
+  border: 3px solid black;
+  margin-left: 15%; }
+
+.head {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-bottom: 3px solid black; }
+
+.tools {
+  position: absolute;
+  width: 15%;
+  height: 100%; }
+
+.toolButton {
+  width: 120px;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-left: 15%;
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  background: #424242;
+  padding: 0.7em 1.5em;
+  outline: none; }
+
+#sizeSelect {
+  width: 80px;
+  height: 30px;
+  margin-bottom: 10px;
+  margin-left: 15%; }
+
+#color {
+  width: 80px;
+  height: 30px;
+  margin-left: 15%; }
+
+.xycoord {
+  width: 80px;
+  height: 30px;
+  margin-left: 15%; }
+
+#lastWorks {
+  margin-left: 77%;
+  position: absolute; }
+
+.Lworks {
+  font-family: sans-serif;
+  text-align: center;
+  width: 250px;
+  height: 150px;
+  background: #6B6B6B;
+  margin: 15px; }
+
+/*# sourceMappingURL=main.css.map */

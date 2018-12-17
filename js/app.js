@@ -43,7 +43,7 @@ var renderSystem = function (obj, elem, action) {
 
 var switchTool = function (button) {
 	if (button.id == 'brush') {
-		alert('brush selected');
+		alert('Starwars 8 not shitly');
 		return 'brush';
 	} else if (button.id == 'notbrush') {
 		alert('NOT brush selected');
