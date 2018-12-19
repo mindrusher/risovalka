@@ -30,8 +30,8 @@ var getCoordinates = function (evt) {
 
 	xCoord.innerText = x;
 	yCoord.innerText = y;
-	//ctx.fillRect(x, y, 10, 10);
-	//console.log(evt);
+	// ctx.fillRect(x, y, 10, 10);
+	// console.log(evt);
 	return xyMas;
 };
 
@@ -43,7 +43,7 @@ var renderSystem = function (obj, elem, action) {
 
 var switchTool = function (button) {
 	if (button.id == 'brush') {
-		alert('Starwars 8 not shitly');
+		alert('brush selected');
 		return 'brush';
 	} else if (button.id == 'notbrush') {
 		alert('NOT brush selected');

@@ -1,5 +1,13 @@
 body {
-  background-image: url("draw.png"); }
+  margin: 0; }
+
+.content-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url("../img/bg/draw.png"); }
 
 #canv {
   position: absolute;
@@ -10,7 +18,8 @@ body {
   margin-left: 15%; }
 
 .head {
-  font-family: sans-serif;
+  font-family: serif;
+  text-transform: uppercase;
   text-align: center;
   margin-top: 5px;
   margin-bottom: 15px;
@@ -19,9 +28,10 @@ body {
 .tools {
   position: absolute;
   width: 15%;
-  height: 100%; }
+  height: screen; }
 
 .toolButton {
+  cursor: pointer;
   width: 120px;
   height: 40px;
   margin-bottom: 10px;
@@ -31,7 +41,12 @@ body {
   user-select: none;
   background: #424242;
   padding: 0.7em 1.5em;
-  outline: none; }
+  outline: none;
+  transition: background 0.5s;
+  border-radius: 10px; }
+  .toolButton:hover {
+    background: red;
+    transition: background 0.5s; }
 
 #sizeSelect {
   width: 80px;

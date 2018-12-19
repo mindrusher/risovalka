@@ -8,46 +8,47 @@
 
 <body>
   
-  <div class="head">
-    <h1>Draw your favorite moments<h1>
-  </div>
-  
-  <div class="canv">
-    <canvas id="canv" width="800" height="500"></canvas>
-  </div>
-  
-  <div class="tools">
-    <div class="coordinates">
-      <button class="toolButton" id='brush'>Brush</button><br>
-			<button class="toolButton" id='notbrush'>Pen</button><br>
-			<button class="toolButton" id='notbrush2'>Pencil</button><br>
-      <button class="toolButton" id='notbrush2'>Fill</button><br>
-      <button class="toolButton" id='notbrush2'>Clean</button><br>
-      <button class="toolButton" id='notbrush2'>Add img</button><br>
-      <button class="toolButton" id='notbrush2'>Add video</button><br>
-      <button class="toolButton" id='notbrush2'>Save</button><br>
-			<select id='sizeSelect'>
-				<option>5</option>
-				<option>10</option>
-				<option>15</option>
-				<option>20</option>
-				<option>30</option>
-			</select><br>
-			<input type="color" id="color">
-      <br>
-      
+  <div class="content-wrapper">
+    <div class="head">
+      <h1>Draw your favorite moments<h1>
+    </div>
+    
+    <div class="canv">
+      <canvas id="canv"></canvas>
+    </div>
+    
+    <div class="tools">
+      <div class="coordinates">
+        <button class="toolButton" id='brush'>Brush</button><br>
+  			<button class="toolButton" id='notbrush'>Pen</button><br>
+  			<button class="toolButton" id='notbrush2'>Pencil</button><br>
+        <button class="toolButton" id='notbrush2'>Fill</button><br>
+        <button class="toolButton" id='notbrush2'>Clean</button><br>
+        <button class="toolButton" id='notbrush2'>Add img</button><br>
+        <button class="toolButton" id='notbrush2'>Add video</button><br>
+        <button class="toolButton" id='notbrush2'>Save</button><br>
+  			<select id='sizeSelect'>
+  				<option>5</option>
+  				<option>10</option>
+  				<option>15</option>
+  				<option>20</option>
+  				<option>30</option>
+  			</select><br>
+  			<input type="color" id="color">
+        <br>
+  		</div>
       <div class="xycoord">
         <p id="x"><b>x: </b> <span id="xCoord"></span></p>
         <p id="y"><b>y: </b> <span id="yCoord"></span></p>
       </div>
-		</div>
-	</div>
+  	</div>
 
-  <div id="lastWorks">
-    <div class="Lworks" id='last1'>your last work</div>
-    <div class="Lworks" id='last2'>your last work</div>
-    <div class="Lworks" id='last3'>your last work</div>
+    <div id="lastWorks">
+      <div class="Lworks" id='last1'>your last work</div>
+      <div class="Lworks" id='last2'>your last work</div>
+      <div class="Lworks" id='last3'>your last work</div>
+    </div>
   </div>
-	<script src="js/app.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

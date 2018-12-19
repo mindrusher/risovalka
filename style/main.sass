@@ -1,5 +1,14 @@
 body
-	background-image: url('draw.png')
+	margin: 0
+
+.content-wrapper
+	position: absolute
+	width: 100%
+	height: 100%
+	padding: 0
+	margin: 0
+	background-image: url('../img/bg/draw.png')
+	
 
 #canv 
 	position: absolute
@@ -10,7 +19,8 @@ body
 	margin-left: 15%
 
 .head
-	font-family: sans-serif
+	font-family: serif
+	text-transform: uppercase
 	text-align: center
 	margin-top: 5px
 	margin-bottom: 15px
@@ -19,9 +29,10 @@ body
 .tools
 	position: absolute
 	width: 15%
-	height: 100%
+	height: screen
 
 .toolButton
+	cursor: pointer
 	width: 120px 
 	height: 40px
 	margin-bottom: 10px
@@ -32,6 +43,11 @@ body
 	background: #424242 /* фон кнопки */
 	padding: .7em 1.5em /* отступ от текста */
 	outline: none /* убирать контур в Mozilla */
+	transition: background 0.5s
+	&:hover
+		background: red
+		transition: background 0.5s
+	border-radius: 10px
 
 	
 #sizeSelect
