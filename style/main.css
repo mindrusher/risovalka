@@ -1,3 +1,6 @@
+html {
+  overflow: hidden; }
+
 body {
   margin: 0; }
 
@@ -7,73 +10,119 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  background-image: url("../img/bg/draw.png"); }
+  background: linear-gradient(135deg, #97ec6d, white); }
 
 #canv {
   position: absolute;
-  width: 800px;
-  height: 500px;
+  width: 900px;
+  height: 550px;
   background: white;
-  border: 3px solid black;
-  margin-left: 15%; }
+  border: 3px solid #53578C;
+  margin-left: 18%;
+  border-radius: 10px;
+  margin-top: 15px; }
 
 .head {
+  background: #70d467;
+  background: linear-gradient(to right, #70d467, #6fbbfa);
   font-family: serif;
-  text-transform: uppercase;
   text-align: center;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border-bottom: 3px solid black; }
+  border-bottom: 3px solid #53578C;
+  height: 73px;
+  color: #53578C; }
+  .head h1 {
+    margin: 0;
+    text-transform: uppercase; }
 
 .tools {
   position: absolute;
+  box-sizing: border-box;
   width: 15%;
-  height: screen; }
+  height: 100%;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 15px;
+  background: linear-gradient(to top, #6fbbfa, #70d467); }
+
+.Buttoms {
+  position: relative; }
 
 .toolButton {
+  float: left;
   cursor: pointer;
-  width: 120px;
-  height: 40px;
-  margin-bottom: 10px;
-  margin-left: 15%;
+  width: 70px;
+  height: 70px;
+  margin: 15px;
   color: #fff;
-  text-decoration: none;
-  user-select: none;
-  background: #424242;
-  padding: 0.7em 1.5em;
-  outline: none;
+  background: white;
   transition: background 0.5s;
   border-radius: 10px; }
   .toolButton:hover {
-    background: red;
+    background: #97ec6d;
     transition: background 0.5s; }
+  .toolButton img {
+    padding-right: 5px; }
+
+#addimg {
+  color: #6fbbfa;
+  text-transform: uppercase;
+  font-weight: 900; }
+
+#save {
+  color: #6fbbfa;
+  text-transform: uppercase;
+  font-weight: 900; }
 
 #sizeSelect {
-  width: 80px;
-  height: 30px;
+  cursor: pointer;
+  float: left;
+  width: 45px;
+  height: 43px;
   margin-bottom: 10px;
-  margin-left: 15%; }
+  margin-left: 20%;
+  background-color: white;
+  font-size: 125%; }
 
 #color {
-  width: 80px;
-  height: 30px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
   margin-left: 15%; }
 
 .xycoord {
   width: 80px;
   height: 30px;
-  margin-left: 15%; }
+  margin-left: 15%;
+  display: none; }
 
-#lastWorks {
-  margin-left: 77%;
+.lastWorks {
+  box-sizing: border-box;
+  margin-left: 85%;
   position: absolute; }
 
 .Lworks {
-  font-family: sans-serif;
-  text-align: center;
-  width: 250px;
-  height: 150px;
-  background: #6B6B6B;
-  margin: 15px; }
+  width: 120px;
+  height: 120px;
+  margin: 25px 25px 15px;
+  display: block;
+  padding: 10px;
+  background: white; }
+
+#fst {
+  height: 120px;
+  width: 120px;
+  border: 10px solid #6fbbfa;
+  border-radius: 10px; }
+
+#snd {
+  border: 10px solid;
+  border-color: #6ae46ec7;
+  border-radius: 10px; }
+
+#trd {
+  height: 120px;
+  width: 120px;
+  border: 10px solid #35e425d1;
+  border-radius: 10px; }
 
 /*# sourceMappingURL=main.css.map */

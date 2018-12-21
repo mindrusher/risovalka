@@ -10,23 +10,25 @@
   
   <div class="content-wrapper">
     <div class="head">
-      <h1>Draw your favorite moments<h1>
+      <br><h1>Draw your favorite moments</h1>
     </div>
     
     <div class="canv">
-      <canvas id="canv"></canvas>
+      <canvas id="canv" height="550px" width="900px"></canvas>
     </div>
     
     <div class="tools">
-      <div class="coordinates">
-        <button class="toolButton" id='brush'>Brush</button><br>
-  			<button class="toolButton" id='notbrush'>Pen</button><br>
-  			<button class="toolButton" id='notbrush2'>Pencil</button><br>
-        <button class="toolButton" id='notbrush2'>Fill</button><br>
-        <button class="toolButton" id='notbrush2'>Clean</button><br>
-        <button class="toolButton" id='notbrush2'>Add img</button><br>
-        <button class="toolButton" id='notbrush2'>Add video</button><br>
-        <button class="toolButton" id='notbrush2'>Save</button><br>
+      <div class="Buttoms">
+        <button class="toolButton" id='brush'><img src="img/icons/brush.png" style="padding-left: 5px"></button>
+  			<button class="toolButton" id='spray'><img src="img/icons/spray.png" style="padding-left: 5px"></button>
+  			<button class="toolButton" id='eraser'><img src="img/icons/eraser.png" style="padding-left: 5px"></button>
+        <button class="toolButton" id='lines'><img src="img/icons/lines.png" style="padding-left: 5px"></button>
+        <button class="toolButton" id='fill'><img src="img/icons/fill.png" style="padding-left: 5px"></button>
+        <button class="toolButton" id='square'><img src="img/icons/square.png" style="padding-left: 5px"></button>
+        <button class="toolButton" id='circle'><img src="img/icons/circle.png" style="padding-left: 5px"></button>
+        <button class="toolButton" id='smart_color'><img src="img/icons/smart_color.png" style="padding-left: 5px"></button>
+        <button class="toolButton" id='addimg'>Add IMG</button>
+        <button class="toolButton" id='save'>Save</button>
   			<select id='sizeSelect'>
   				<option>5</option>
   				<option>10</option>
@@ -43,10 +45,10 @@
       </div>
   	</div>
 
-    <div id="lastWorks">
-      <div class="Lworks" id='last1'>your last work</div>
-      <div class="Lworks" id='last2'>your last work</div>
-      <div class="Lworks" id='last3'>your last work</div>
+    <div class="lastWorks">
+      <div class="Lworks" id="fst"><img src="img/icons/plus.png"></div>
+      <div class="Lworks" id="snd"><img src="img/icons/plus.png"></div>
+      <div class="Lworks" id="trd"><img src="img/icons/plus.png"></div>
     </div>
   </div>
   <script src="js/app.js"></script>
