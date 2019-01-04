@@ -3,57 +3,58 @@ html
 
 body
 	margin: 0
+	padding: 0
+	width: 100vw
+	height: 100vh
+
+@font-face
+	font-family: 'Roboto-Bold'
+	src: url(../fonts/Roboto-Bold.ttf)
 
 .content-wrapper
-	position: absolute
-	width: 100%
-	height: 100%
+	width: 100vw
+	height: 100vh
 	padding: 0
 	margin: 0
 	background: linear-gradient(135deg, #97ec6d, white)
 
-#canv 
-	position: absolute
-	width: 900px
-	height: 550px
-	background: white
-	border: 3px solid #53578C
-	margin-left: 18%
-	border-radius: 10px
-	margin-top: 15px
-
-.head
+.header
 	background: #70d467
 	background: linear-gradient(to right, #70d467, #6fbbfa)
-	font-family: serif
 	text-align: center
 	border-bottom: 3px solid #53578C
-	height: 73px
+	height: 10vh
+	width: 100vw
+	color: #53578C
 	h1
 		margin: 0
 		text-transform: uppercase
-	color: #53578C
+		font-family: Roboto-Bold
+	
+.mainarea
+	height: 87vh
+	padding-top: 0
 
 .tools
 	position: absolute
-	box-sizing: border-box
-	width: 15%
-	height: 100%
+	width: 200px
+	height: 80%
 	border-radius: 10px
-	margin-left: 20px
-	margin-top: 15px
+	margin: 20px 10px 0px 15px
 	background: linear-gradient(to top, #6fbbfa, #70d467)
 	
-.Buttoms
-	position: relative
+.Buttons
+	width: inherit
+	height: inherit
+	
 
 .toolButton
-	float: left
 	cursor: pointer
+	float: left
 	width: 70px 
 	height: 70px
-	margin: 15px
-	color: #fff /* цвет текста */
+	margin: 5px
+	color: #fff 
 	background: white 
 	transition: background 0.5s
 	&:hover
@@ -82,12 +83,14 @@ body
 	margin-left: 20%
 	background-color: white
 	font-size: 125%
+	border-radius: 10px
 
 #color
 	cursor: pointer
 	width: 40px
 	height: 40px
 	margin-left: 15%
+	border-radius: 10px
 
 .xycoord
 	width: 80px
@@ -95,32 +98,58 @@ body
 	margin-left: 15%
 	display: none
 
+.canv
+	padding: 0
+	width: 65vw
+	height: 90%
+	display: inline-block
+	border: 3px solid #53578C
+	margin-left: 230px
+	border-radius: 10px
+	margin-top: 30px
+	
+#canvas
+	border: inherit
+	width: 100%
+	height: 100%
+	background: white
+
 .lastWorks
-	box-sizing: border-box
-	margin-left: 85%
-	position: absolute
+	ul
+		padding: 0
+	li 
+		list-style-type: none
+	
 
 .Lworks
 	width: 120px
 	height: 120px
-	margin: 25px 25px 15px
+	margin: 20px
 	display: block
 	padding: 10px
 	background: white
+	text-align: center
   	
 #fst
-	height: 120px 
-	width: 120px
+	height: 200px 
+	width: 220px
+	margin-top: 20px
 	border: 10px solid #6fbbfa
 	border-radius: 10px
+	padding-top: 50px
 	
 #snd
-	border: 10px solid 
-	border-color: #6ae46ec7
+	height: 200px 
+	width: 220px
+	border: 10px solid #6ae46ec7
 	border-radius: 10px
+	padding-top: 50px
 
 #trd
-	height: 120px 
-	width: 120px
+	height: 200px 
+	width: 220px
 	border: 10px solid #35e425d1
 	border-radius: 10px
+	padding-top: 50px
+
+

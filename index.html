@@ -2,55 +2,86 @@
 <html>
 
 <head>
-	<title>Draw your Dreams</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="style/main.css">
+  <title>Draw your Dreams</title>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
 <body>
   
   <div class="content-wrapper">
-    <div class="head">
-      <br><h1>Draw your favorite moments</h1>
+    <div class="header" class="container-fluid">
+    <br><h1>Draw your favorite moments</h1>
     </div>
     
-    <div class="canv">
-      <canvas id="canv" height="550px" width="900px"></canvas>
-    </div>
-    
-    <div class="tools">
-      <div class="Buttoms">
-        <button class="toolButton" id='brush'><img src="img/icons/brush.png" style="padding-left: 5px"></button>
-  			<button class="toolButton" id='spray'><img src="img/icons/spray.png" style="padding-left: 5px"></button>
-  			<button class="toolButton" id='eraser'><img src="img/icons/eraser.png" style="padding-left: 5px"></button>
-        <button class="toolButton" id='lines'><img src="img/icons/lines.png" style="padding-left: 5px"></button>
-        <button class="toolButton" id='fill'><img src="img/icons/fill.png" style="padding-left: 5px"></button>
-        <button class="toolButton" id='square'><img src="img/icons/square.png" style="padding-left: 5px"></button>
-        <button class="toolButton" id='circle'><img src="img/icons/circle.png" style="padding-left: 5px"></button>
-        <button class="toolButton" id='smart_color'><img src="img/icons/smart_color.png" style="padding-left: 5px"></button>
-        <button class="toolButton" id='addimg'>Add IMG</button>
-        <button class="toolButton" id='save'>Save</button>
-  			<select id='sizeSelect'>
-  				<option>5</option>
-  				<option>10</option>
-  				<option>15</option>
-  				<option>20</option>
-  				<option>30</option>
-  			</select><br>
-  			<input type="color" id="color">
-        <br>
-  		</div>
-      <div class="xycoord">
-        <p id="x"><b>x: </b> <span id="xCoord"></span></p>
-        <p id="y"><b>y: </b> <span id="yCoord"></span></p>
-      </div>
-  	</div>
+    <div class="container-fluid">
+      <div class="row mainarea">
+        
+        <div class="tools">
+          <div class="Buttons col-md-3 col-sm-2 col-xs-2">
+            <button class="toolButton" id='brush'><img src="img/icons/brush.png"></button>
+      			<button class="toolButton" id='spray'><img src="img/icons/spray2.png"></button>
+      			<button class="toolButton" id='eraser'><img src="img/icons/eraser2.png" style="padding-left: 5px"></button>
+            <button class="toolButton" id='lines'><img src="img/icons/lines.png" style="padding-left: 5px"></button>
+            <button class="toolButton" id='fill'><img src="img/icons/fill2.png" style="padding-left: 5px"></button>
+            <button class="toolButton" id='square'><img src="img/icons/square2.png" style="padding-left: 5px"></button>
+            <button class="toolButton" id='circle'><img src="img/icons/circle2.png" style="padding-left: 5px"></button>
+            <button class="toolButton" id='smart_color'><img src="img/icons/smart_color2.png" style="padding-left: 5px"></button>
+            <button class="toolButton" id='addimg'>Add IMG</button>
+            <button class="toolButton" id='save'>Save</button>
+      			<select id='sizeSelect'>
+      				<option>5</option>
+      				<option>10</option>
+      				<option>15</option>
+      				<option>20</option>
+      				<option>30</option>
+      			</select><br>
+      			<input type="color" id="color">
+          </div>
+          <div class="xycoord">
+            <p id="x"><b>x: </b> <span id="xCoord"></span></p>
+            <p id="y"><b>y: </b> <span id="yCoord"></span></p>
+          </div>
+        </div>
+        
+        <div class="canv col-md-7 col-sm-9 col-xs-9">
+          <canvas id="canvas"></canvas>
+        </div>
+        
+        <div class="lastWorks col-md-2 col-sm-1 col-xs-1">
+          <nav class="menuVertical">  
+            <ul>
+              <li>
+                <div class="Lworks" id="fst">
+                  <a href="img/icons/plus.png">
+                    <img src="img/icons/plus.png">
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="Lworks" id="snd">
+                  <a href="img/icons/plus.png">
+                    <img src="img/icons/plus.png">
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="Lworks" id="trd">
+                  <a href="img/icons/plus.png">
+                    <img src="img/icons/plus.png">
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
-    <div class="lastWorks">
-      <div class="Lworks" id="fst"><img src="img/icons/plus.png"></div>
-      <div class="Lworks" id="snd"><img src="img/icons/plus.png"></div>
-      <div class="Lworks" id="trd"><img src="img/icons/plus.png"></div>
+      </div>
     </div>
   </div>
-  <script src="js/app.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

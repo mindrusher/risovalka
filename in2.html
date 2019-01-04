@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  	<link rel="stylesheet" href="style/bootstrap.min.css">
+  	<link rel="stylesheet" href="style/main.css">
+  	<title>Draw your Dreams</title>
+</head>
+
+<body>
+	<div class="header">
+    	<br><h1>Draw your favorite moments</h1>
+    </div>
+
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="tools mainblock col-md-3 col-sm-3 col-xs-2">
+		            <div class="Buttons">
+			            <button class="toolButton" id='brush'><img src="img/icons/brush.png"></button>
+			      			<button class="toolButton" id='spray'><img src="img/icons/spray2.png"></button>
+			      			<button class="toolButton" id='eraser'><img src="img/icons/eraser2.png" style="padding-left: 5px"></button>
+			            <button class="toolButton" id='lines'><img src="img/icons/lines.png" style="padding-left: 5px"></button>
+			            <button class="toolButton" id='fill'><img src="img/icons/fill2.png" style="padding-left: 5px"></button>
+			            <button class="toolButton" id='square'><img src="img/icons/square2.png" style="padding-left: 5px"></button>
+			            <button class="toolButton" id='circle'><img src="img/icons/circle2.png" style="padding-left: 5px"></button>
+			            <button class="toolButton" id='smart_color'><img src="img/icons/smart_color2.png" style="padding-left: 5px"></button>
+			            <button class="toolButton" id='addimg'>Add IMG</button>
+			            <button class="toolButton" id='save'>Save</button>
+			      			<select id='sizeSelect'>
+			      				<option>5</option>
+			      				<option>10</option>
+			      				<option>15</option>
+			      				<option>20</option>
+			      				<option>30</option>
+			      			</select><br>
+			      			<input type="color" id="color">
+		          	</div>
+			        <div class="xycoord">
+			            <p id="x"><b>x: </b> <span id="xCoord"></span></p>
+			            <p id="y"><b>y: </b> <span id="yCoord"></span></p>
+			        </div>
+				</div>
+
+				<div class="canv mainblock col-md-7 col-sm-9 col-xs-10">
+            		<canvas id="canv" height="55vh" width="90vw"></canvas>
+         		</div>
+
+				<div class="lastWorks col-md-2 col-xs-0">
+          <nav class="menuVertical">  
+            <div>  
+              <ul>
+                <li>
+                  <div class="Lworks" id="fst">
+                    <a href="img/icons/plus.png">
+                      <img src="img/icons/plus.png">
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="Lworks" id="snd">
+                    <a href="img/icons/plus.png">
+                      <img src="img/icons/plus.png">
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="Lworks" id="trd">
+                    <a href="img/icons/plus.png">
+                      <img src="img/icons/plus.png">
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+			</div>
+		</div>
+	</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
